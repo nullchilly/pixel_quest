@@ -376,7 +376,7 @@ function mouseClicked() {
         }
     }
     if (screen == 2) {
-        if (ux >= 90 && ux <= 128 && uy >= 18 && uy <= 50) {
+        if (ux >= 90 + 345 && ux <= 148 + 345 && uy >= 18 && uy <= 50) {
             HINT = 1;
         }
         if (ux >= 5 && ux <= 76 && uy >= 18 && uy <= 50) {
@@ -559,11 +559,11 @@ function display() {
     textSize(20);
   
     fill("black");
-    rect(90, 18, 56, 30, 20);
+    rect(90 + 345, 18, 56, 30, 20);
     textSize(20);
     textAlign(LEFT);
     fill("white");
-    text("Hint", 100, 35);
+    text("Hint", 100 + 345, 35);
     textSize(20);
     fill("black");
     for (let i = 0; i < 6; i++) {
